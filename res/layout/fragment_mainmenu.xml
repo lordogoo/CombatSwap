@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/orangegreystone"
+        android:useDefaultMargins="true"
+        android:alignmentMode="alignBounds"
+        android:columnOrderPreserved="false"
+
+        android:columnCount="4"
+        >
+
+    <TextView
+            android:text="Combat Swap"
+            android:textSize="32dip"
+            android:textColor="#000000"
+            android:layout_column="2"
+            android:layout_gravity="center_horizontal"
+            />
+
+    <Space
+            android:layout_row="4"
+            android:layout_column="2"
+            android:layout_gravity="fill"
+            />
+
+    <Button
+            android:id="@+id/main_Next"
+            android:background="@drawable/styled_button"
+            android:text="Play Game"
+            android:layout_row="5"
+            android:layout_column="2"
+            android:layout_gravity="center_horizontal"
+            style="@style/button_styled"
+            />
+
+        <Button
+                android:id="@+id/main_characters"
+                android:background="@drawable/styled_button"
+                android:text="Character List"
+                android:layout_row="6"
+                android:layout_column="2"
+                android:layout_gravity="center_horizontal"
+                style="@style/button_styled"
+                />
+        <Button
+                android:id="@+id/main_reset"
+                android:background="@drawable/styled_button"
+                android:text="Reset data"
+                android:layout_row="7"
+                android:layout_column="2"
+                android:layout_gravity="center_horizontal"
+                style="@style/button_styled"
+                />
+        <Space
+                android:layout_row="8"
+                android:layout_column="0"
+                android:layout_columnSpan="3"
+                android:layout_gravity="fill"
+                />
+        <Button
+                android:id="@+id/main_Quit"
+                android:background="@drawable/styled_button"
+                android:text="Quit"
+                android:layout_row="9"
+                android:layout_column="2"
+                android:layout_gravity="center_horizontal"
+                style="@style/button_styled"
+                />
+</GridLayout>
+

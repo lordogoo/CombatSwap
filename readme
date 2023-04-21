@@ -1,0 +1,7 @@
+This is the source code for the combat swap game. This code is propritary of Toppling Titan Games and isn't avalable for personal use. If there is code you want to use please contact the owner Mark Nicoll with email lordogoo@gmail.com and we can work out a contract for its use.
+
+version 1.7
+
+known issues
+-on galaxy s6 the intro logo animation is not displaying in the proper location.
+-banner advertisement still appears on first load of the main menu if advertisements have been removed.

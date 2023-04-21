@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@drawable/orangegreystone"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView android:id = "@+id/dungeonname"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity = "center_horizontal"/>
+    <TextView android:id = "@+id/completed"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity = "center_horizontal"
+              android:layout_below = "@id/dungeonname"/>
+
+    <ScrollView
+              android:layout_width = "match_parent"
+              android:layout_height = "wrap_content"
+              android:layout_below = "@id/completed">
+            <LinearLayout
+                    android:orientation = "vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView android:text = "Monsters"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"/>
+                <LinearLayout android:id = "@+id/monsterslist"
+                        android:orientation = "vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                </LinearLayout>
+                <TextView android:text = "Rewards"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_horizontal"
+                          android:gravity="center_horizontal"/>
+                <LinearLayout android:id = "@+id/rewardslist"
+                        android:orientation = "vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                </LinearLayout>
+            </LinearLayout>
+    </ScrollView>
+<RelativeLayout android:id = "@+id/bottombuttongroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+    <Button android:id = "@+id/dungeoninfoback"
+            android:background="@drawable/styled_button"
+            android:text="back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            style="@style/button_styled"/>
+    <Button android:id = "@+id/dungeoninfonext"
+            android:background="@drawable/styled_button"
+            android:text="next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            style="@style/button_styled"/>
+</RelativeLayout>
+
+</RelativeLayout>
